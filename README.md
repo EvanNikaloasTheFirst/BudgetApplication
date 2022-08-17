@@ -3,6 +3,9 @@
 
 The application is available at:
 
+https://evannikaloasthefirst.github.io/BudgetApplication/
+
+
 Here I have created an application where users can add expenses and incoming into the application and then the application will calculate the inputs and displays the total cash flow , the amount of the total expenses and wether the user is in arreas.
 
 INSTRUCTIONS:
