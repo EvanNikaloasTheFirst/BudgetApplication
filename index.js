@@ -51,7 +51,6 @@ calculateExpense.addEventListener("click", function(){
             // expense.style.right = "15px";
             console.log(expense);
             expense.style.color = 'red';
-            expense.style.backgroundColor = '#ffffff2e';
 
             
 
@@ -78,26 +77,20 @@ calculateExpense.addEventListener("click", function(){
             // calculateBalance()
                    
 }
+expenseName.value  = " ";
+expenseCost.value  = " "
 })
 console.log(expenditureList);
 
 calculateBtn.addEventListener("click", function(){
 {
-   
+    
     // creates an object everytime the submit button is clicked
     let income = {
         type : "income",
         title: parseFloat(calculateInput.value),
         
     }
-
-    if (calculateInput.value == '')
-    {
-        calculateInput.value = '0'
-        alert('Please enter a value')
-    }
-
-
 
 
 // Adds an incoming amount to the transactions section
@@ -108,14 +101,10 @@ calculateBtn.addEventListener("click", function(){
             t.style.color = 'white';
             t.style.fontStyle = 'bold';
             t.style.position = 'relative';
-            t.style.backgroundColor = '#ffffff2e';
 
 
             // deleteObj = document.createElement('button');
             // deleteObj.innerHTML = 'X';
-
-            
-            
             // t.appendChild(deleteObj)
             // billsList[0].append(deleteObj);
 
@@ -163,12 +152,10 @@ calculateBtn.addEventListener("click", function(){
     incomeList.push(calculateInput.value)
     calculateBudget()
     calculateExpenses()
-    
-    
-
 console.log
 (incomeList)
 }
+calculateInput.value  = " "
 
 })
 // calculates the income added into the system,
@@ -178,21 +165,14 @@ for ( i in incomeList)
 {
     incomeTotal += parseFloat(incomeList[i])
 }
-
-
-console.log(incomeTotal)
-
 currentBudget.style.color = 'green';
 currentBudget.innerHTML =  "£" + incomeTotal;
 
 }
 
-
-
 // calculates the expenses
 function calculateExpenses (expenseCost)
 {
-    
 for (let i in expenseArray)
 {
     expenseTotal += parseFloat(expenseArray[i])
@@ -210,6 +190,4 @@ expenseTotal = 0;
 
 console.log(expenseTotal)
 }
-
-
 
