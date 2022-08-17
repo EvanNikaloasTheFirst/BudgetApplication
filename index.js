@@ -10,12 +10,20 @@ let expenseName = document.getElementById('expenseName');
 // Cost of the expense
 let expenseCost = document.getElementById('expenseCost')
 let expenditureList = [];
+
+// stores each incomes amount 
 let incomeList = [];
+// stores each expense amount 
 let expenseArray = [];
 
 
 // text node to append text to expense log
-var expense,t,deleteObj;
+
+// expense = each expense object
+// incomingMoney = money added to system
+// delete obj = delete icon to delete an object
+
+var expense,incomingMoney,deleteObj;
 
 
 let expenseTotal = 0;
@@ -77,6 +85,7 @@ calculateExpense.addEventListener("click", function(){
             // calculateBalance()
                    
 }
+// resets input box to empty after submission
 expenseName.value  = " ";
 expenseCost.value  = " "
 })
@@ -94,13 +103,13 @@ calculateBtn.addEventListener("click", function(){
 
 
 // Adds an incoming amount to the transactions section
-    t = document.createElement("p");
-            t.innerHTML = ("Income: " + "£" + parseFloat(calculateInput.value));
-            billsList[0].append(t);
-            t.style.textAlign = "center";
-            t.style.color = 'white';
-            t.style.fontStyle = 'bold';
-            t.style.position = 'relative';
+    incomingMoney = document.createElement("p");
+    incomingMoney.innerHTML = ("Income: " + "£" + parseFloat(calculateInput.value));
+            billsList[0].append(incomingMoney);
+            incomingMoney.style.textAlign = "center";
+            incomingMoney.style.color = 'white';
+            incomingMoney.style.fontStyle = 'bold';
+            incomingMoney.style.position = 'relative';
 
 
             // deleteObj = document.createElement('button');
