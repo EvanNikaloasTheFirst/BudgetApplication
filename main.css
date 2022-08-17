@@ -8,8 +8,9 @@
 https://css-tricks.com/a-few-background-patterns-sites/ */
 body {
     font-family: 'Montserrat', sans-serif;
-background-color: #0E1C36;
+background-color: orange;
 color: #fff;  
+font-weight: 900;
 }
 
 
@@ -46,8 +47,8 @@ margin: 0 auto;
 }
 
 #calculateBtn{
-    color: green;
-    background: #0E1C36;
+    color: #fff;
+    background:  #FFA500;
     font-size: 1rem;
     border-radius: 5px;
     position: relative;
@@ -80,7 +81,7 @@ margin: 0 auto;
     
 }
 #calculateExpense{
-    color: red;
+    color: #fff;
     font-size: 1rem;
     border-radius: 5px;
     position: relative;
@@ -88,7 +89,7 @@ margin: 0 auto;
     font-size: .8rem;
     padding: 5px;
     width: fit-content;
-    background: #0E1C36;
+    background: #FFA500;
 }
 
 .calculations{
@@ -128,8 +129,6 @@ img {
     overflow-x: hidden;
     width:98%;
     margin: 0 auto;
-    background-color: #608bdb20;
-    border-radius: 10px;
 }
 
 

@@ -94,6 +94,7 @@ console.log(expenditureList);
 calculateBtn.addEventListener("click", function(){
 {
     
+    
     // creates an object everytime the submit button is clicked
     let income = {
         type : "income",
