@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* sourced: 
+https://css-tricks.com/a-few-background-patterns-sites/ */
+body {
+    font-family: 'Montserrat', sans-serif;
+background-color: #0E1C36;
+color: #fff;  
+}
+
+
+
+
+
+header h1 {
+    text-align: center;
+}
+
+.container {
+/* From https://css.glass */
+background: rgba(255, 255, 255, 0.18);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(2.7px);
+-webkit-backdrop-filter: blur(2.7px);
+border: 1px solid rgba(255, 255, 255, 0.15);
+width: fit-content;
+margin: 0 auto;
+}
+
+
+
+
+.budgetBox{
+    padding: 10px;
+    border-radius: 5px;
+    position: relative;
+    margin: 0 auto;
+    left: 0;
+    width:100%;
+    font-size: .8rem;
+}
+
+#calculateBtn{
+    color: green;
+    background: #0E1C36;
+    font-size: 1rem;
+    border-radius: 5px;
+    position: relative;
+    top: 3px;
+    width: fit-content;
+    padding: 5px;
+
+  
+}
+
+#calculateInput{
+    width:50%;
+    height: 20px;
+    position: relative;
+
+}
+.expensebox{
+    left: 0;
+    width:100%;
+    padding: 10px;
+    position: relative;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+.expenseInput{
+    width:75%;
+    
+    height: 0px;
+    
+}
+#calculateExpense{
+    color: red;
+    font-size: 1rem;
+    border-radius: 5px;
+    position: relative;
+    top: 2px;
+    font-size: .8rem;
+    padding: 5px;
+    width: fit-content;
+    background: #0E1C36;
+}
+
+.calculations{
+    position: relative;
+    width: fit-content;
+    text-align: center;
+    position: relative;
+    margin: 0 auto;
+    
+
+}
+.calculations ul li {
+    
+    list-style-type: none;
+    display: inline-block;
+
+}
+
+img {
+    width: 70px;
+    padding: 10px;
+}
+
+
+
+.billsList h1 {
+    position: relative;
+    text-align: center; 
+    font-size: 2rem;
+
+}
+
+.billsList {
+    position: relative;
+    height: 300px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width:98%;
+    margin: 0 auto;
+    background-color: #608bdb20;
+    border-radius: 10px;
+}
+
+
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+ 
+    50% {
+        background-position: 100% 50%;
+    }
+ 
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 15px;
+
+    
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background-color: #fff;
+    border-radius: 15px;
+    
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background-color: #0E1C36;
+    border-radius: 15px;
+  }
+  
